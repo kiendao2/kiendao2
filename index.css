@@ -1,0 +1,169 @@
+*{margin:0; padding:0;}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/* css cho header  */
+ul {
+    float: right;
+    padding-top: 20px;
+}
+ul li{
+    display:inline;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 576px){
+    .checkbtn{
+      display: block;
+      margin-right: 40px;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      opacity: 0;
+      text-align: center;
+      transition: all .5s;
+      /* z-index:200; */
+     
+    }
+  .len2{
+    opacity: 1;
+    z-index: 200;
+  }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+      z-index: 100;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .dichphai{
+      transform: translateX(100%);
+    }
+    .den{
+      position: fixed;
+      top:0;
+      left:0;
+      background: black;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.5s;
+    }
+    .len{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+.bt1{
+    border-radius: 30px;
+    width: 100px;
+}
+.bt2{
+    width: 200px;
+    border-radius: 60px;
+    color:#ffc501;
+}
+/* .header-right {
+    padding-top: 20px;
+} */
+a {
+    padding: 0px 6px;
+}
+@media(max-width:576px){
+    *{}
+
+.ourWork2 {margin-top: 1088px;height: 2000px;}
+
+.ourWork {
+    margin-top: 730px; 
+  /* problem  */
+}
+
+button.btn.btn-danger.bt1 {
+    height: 18px;
+    width: 55px;
+    font-size: 10px;
+    padding-top: 0px;
+}
+
+.col-sm-6.thanhcongcu {
+    position: absolute;
+    top: -13px;
+    right: -9px;
+    font-size: 10px;
+}
+
+.header-trai img {
+    width: 50%;
+}
+
+.header-trai {
+    width: 30%;
+}
+    
+}
+    
+/* css cho main  */
+
+/* css cho service  */
+.blueLine{
+  position: relative;
+}
+.blueLine:after{
+content:"";
+display:block;
+background-color: #00c6bf;
+width:150px;
+height: 1px;
+position: absolute;
+bottom:-20px;
+left:50%;
+margin-left:-68px;
+}
+/*  css cho ourwork  */
+.work{
+    padding: 0px 20px ;
+    color:#c9d6db;
+    font-family:segoe ui light;
+}
+.webDev{
+    background: url(https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    height: 180px;
+    background-size: cover;
+}
+.webDev2{
+    height: 180px;
+    background:url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80);
+    background-size: cover;
+}
+.webDev:hover{
+   opacity: 0.5;
+    transition: 0.4s;
+}
+.webDev2:hover{
+    opacity: 0.5;
+    transition: 0.4s;
+}
