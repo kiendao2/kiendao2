@@ -1,7 +1,7 @@
 *{margin:0; padding:0;}
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 /* css cho header  */
-ul {
+.hmm {
     float: right;
     padding-top: 20px;
 }
@@ -34,7 +34,7 @@ button.btn.btn-danger.bt1 {
       display: block;
       margin-right: 40px;
     }
-    ul{
+    .hmm{
       position: fixed;
       width: 100%;
       height: 100vh;
@@ -43,7 +43,7 @@ button.btn.btn-danger.bt1 {
       text-align: center;
       transition: all .5s;
       /* z-index:200; */
-     
+     /* visibility: hidden; */
      } 
   .len2{
     opacity: 1;
@@ -98,6 +98,14 @@ a {
 }
 @media(max-width:576px){
     *{}
+
+.btn.btn-danger.moreStory {
+    margin-left: 28% !important;
+}
+
+.btn.btn-danger.startProjectNow {
+    margin-left: 35% !important;
+}
 
 .member {
     margin-top: 16px;
@@ -190,7 +198,7 @@ margin-left:-68px;
 }
 
 .name {
-  top: 80%;
+  bottom:12%;
   background: aqua;
   position: absolute;
   width: 100%;
